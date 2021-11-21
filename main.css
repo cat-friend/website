@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Consolas, "Lucida Console", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 100vh;
+    color: rgb(51, 255, 0);
+    background-color: rgb(40, 40, 40);
+}
+
+p {
+    font-size: 100px;
+}
+
+#info {
+    margin-top: 30px;
+}
+
+a, a:visited {
+    color: rgb(0, 255, 102);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    display: inline;
+    list-style-type: none;
+}
+
+#cursor {
+    animation: blink 1.75s infinite reverse;
+}
+
+@keyframes blink {
+    0% {
+        background-color: rgb(40, 40, 40)
+    }
+
+    49% {
+        background-color: rgb(40, 40, 40)
+    }
+
+    50% {
+        background-color: rgb(51, 255, 0)
+    }
+
+    100% {
+        background-color: rgb(51, 255, 0)
+    }
+
+
+}
