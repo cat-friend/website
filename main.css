@@ -6,7 +6,8 @@
 
 body {
     font-family: Consolas, "Lucida Console", monospace;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
@@ -15,6 +16,9 @@ body {
     background-color: rgb(40, 40, 40);
 }
 
+#main {
+    grid-column: 2/3;
+}
 p {
     font-size: 100px;
 }
